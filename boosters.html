@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Boosters - Will & Sam's Juice Bar</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #ffffff;
+      background-image: url('https://github.com/prof-rossetti/internet-technologies/blob/main/exercises/website-challenge/images/backgrounds/ingredients.jpg?raw=true');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      backdrop-filter: brightness(0.6);
+      min-height: 100vh;
+    }
+
+    .container {
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 60px 30px;
+      max-width: 800px;
+      margin: 0 auto;
+      border-radius: 12px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.8em;
+      margin-bottom: 20px;
+    }
+
+    p.description {
+      text-align: center;
+      font-size: 1.2em;
+      margin-bottom: 40px;
+    }
+
+    .booster-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    .booster-item {
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 15px 20px;
+      border-radius: 10px;
+      font-size: 1.1em;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .booster-name {
+      color: #ffeb3b;
+    }
+
+    .price {
+      color: #ffd54f;
+    }
+
+    a {
+      display: block;
+      text-align: center;
+      margin-top: 40px;
+      font-size: 1.3em;
+      color: #ffeb3b;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: #ffffff;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Boosters</h1>
+    <p class="description">Give your smoothie a nutritional upgrade with any of these power-packed boosters.</p>
+
+    <div class="booster-grid">
+      <div class="booster-item"><span class="booster-name">Acai</span><span class="price">$1.25</span></div>
+      <div class="booster-item"><span class="booster-name">Cacao</span><span class="price">$1.00</span></div>
+
+      <div class="booster-item"><span class="booster-name">Chia Seeds</span><span class="price">$0.75</span></div>
+      <div class="booster-item"><span class="booster-name">Aloe Vera</span><span class="price">$1.00</span></div>
+
+      <div class="booster-item"><span class="booster-name">Hemp Protein</span><span class="price">$1.50</span></div>
+      <div class="booster-item"><span class="booster-name">Coconut Oil</span><span class="price">$0.75</span></div>
+
+      <div class="booster-item"><span class="booster-name">Spinach</span><span class="price">$0.50</span></div>
+      <div class="booster-item"><span class="booster-name">Flax Seeds</span><span class="price">$0.75</span></div>
+
+      <div class="booster-item"><span class="booster-name">Kale</span><span class="price">$0.50</span></div>
+      <div class="booster-item"><span class="booster-name">Ginger</span><span class="price">$0.75</span></div>
+
+      <div class="booster-item"><span class="booster-name">Matcha</span><span class="price">$1.50</span></div>
+      <div class="booster-item"><span class="booster-name">Goji Berries</span><span class="price">$1.25</span></div>
+
+      <div class="booster-item"><span class="booster-name">Vegan Probiotic</span><span class="price">$1.00</span></div>
+      <div class="booster-item"><span class="booster-name">Wheatgrass</span><span class="price">$1.25</span></div>
+
+      <div class="booster-item"><span class="booster-name">Maca</span><span class="price">$1.00</span></div>
+    </div>
+
+    <a href="menu.html">Back to Menu</a>
+  </div>
+</body>
+</html>
