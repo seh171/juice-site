@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact | Will & Sam's Juice Bar</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #ffffff;
+      background-image: url('https://cdn.britannica.com/33/132433-050-AA78347C/Healy-Hall-Georgetown-University-Washington-DC.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      backdrop-filter: brightness(0.6);
+      min-height: 100vh;
+      padding-top: 100px;
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.8);
+      padding: 15px 40px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 999;
+      box-sizing: border-box;
+    }
+
+    .logo {
+      font-size: 1.5em;
+      font-weight: bold;
+      color: #f0f0f0;
+      text-decoration: none;
+    }
+
+    .nav-links {
+      list-style-type: none;
+      display: flex;
+      gap: 20px;
+      margin: 0;
+      padding: 0;
+      flex-wrap: wrap;
+    }
+
+    .nav-links li a {
+      text-decoration: none;
+      color: #ffeb3b;
+      font-size: 1.1em;
+      font-weight: bold;
+      transition: color 0.2s ease;
+    }
+
+    .nav-links li a:hover {
+      color: #ffffff;
+    }
+
+    .container {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 50px 30px;
+      max-width: 700px;
+      margin: 0 auto;
+      border-radius: 12px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.8em;
+      margin-bottom: 10px;
+    }
+
+    .contact-info {
+      margin-bottom: 30px;
+      font-size: 1.1em;
+      line-height: 1.8;
+      color: #ddd;
+    }
+
+    .contact-info b {
+      color: #ffeb3b;
+    }
+
+    form input,
+    form textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border: none;
+      border-radius: 6px;
+      font-size: 1em;
+    }
+
+    form button {
+      background-color: #ffeb3b;
+      color: #000;
+      font-weight: bold;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 6px;
+      font-size: 1em;
+      cursor: pointer;
+    }
+
+    form button:hover {
+      background-color: #fff176;
+    }
+
+    @media (max-width: 700px) {
+      nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px 20px;
+      }
+
+      .nav-links {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="logo">Will & Sam's Juice Bar</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <h1>Contact Us</h1>
+
+    <div class="contact-info">
+      <p><b>Address:</b> 123 10th Street NW, Georgetown, Washington, D.C.</p>
+      <p><b>Sam:</b> <a href="mailto:sam@georgetown.edu" style="color:#ffeb3b;">sam@georgetown.edu</a></p>
+      <p><b>Will:</b> <a href="mailto:will@georgetown.edu" style="color:#ffeb3b;">will@georgetown.edu</a></p>
+      <p><b>Business Email:</b> <a href="mailto:juicebar@gmail.com" style="color:#ffeb3b;">juicebar@gmail.com</a></p>
+    </div>
+
+    <form>
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+
+</body>
+</html>

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>About Us - Juice Haven</title>
+  <title>About Us - Will & Sam's</title>
   <style>
     body {
       margin: 0;
@@ -15,6 +15,64 @@
       background-attachment: fixed;
       backdrop-filter: brightness(0.6);
       min-height: 100vh;
+      padding-top: 100px;
+    }
+
+    /* Nav bar */
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.8);
+      padding: 15px 40px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 999;
+      box-sizing: border-box;
+    }
+
+    .logo {
+      font-size: 1.5em;
+      font-weight: bold;
+      color: #f0f0f0;
+      text-decoration: none;
+    }
+
+    .nav-links {
+      list-style-type: none;
+      display: flex;
+      gap: 20px;
+      margin: 0;
+      padding: 0;
+      flex-wrap: wrap;
+    }
+
+    .nav-links li a {
+      text-decoration: none;
+      color: #ffeb3b;
+      font-size: 1.1em;
+      font-weight: bold;
+      transition: color 0.2s ease;
+    }
+
+    .nav-links li a:hover {
+      color: #ffffff;
+    }
+
+    @media (max-width: 700px) {
+      nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px 20px;
+      }
+
+      .nav-links {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+      }
     }
 
     .container {
@@ -52,12 +110,25 @@
   </style>
 </head>
 <body>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="index.html" class="logo">Will & Sam's Juice Bar</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- About Us Content -->
   <div class="container">
     <h1>About Us</h1>
 
-    <p>Juice Haven was born out of a shared dream between Will and Sam, two friends who met during their Master’s in Management program in Washington, D.C. While studying in the heart of the city, they often found themselves craving nutritious, energizing food options that didn’t sacrifice flavor or freshness. Inspired by the dynamic energy of Georgetown and driven by their passion for wellness, they envisioned a juice bar that could serve as both a nourishing stop and a neighborhood gathering spot. What started as a class project quickly turned into late-night brainstorming sessions, recipe experiments in their small apartment kitchens, and eventually — a lease on a small corner space in Georgetown.</p>
+    <p>Will & Sam's Juice Bar was born out of a shared dream between Will and Sam, two friends who met during their Master’s in Management program in Washington, D.C. While studying in the heart of the city, they often found themselves craving nutritious, energizing food options that didn’t sacrifice flavor or freshness. Inspired by the dynamic energy of Georgetown and driven by their passion for wellness, they envisioned a juice bar that could serve as both a nourishing stop and a neighborhood gathering spot. What started as a class project quickly turned into late-night brainstorming sessions, recipe experiments in their small apartment kitchens, and eventually — a lease on a small corner space in Georgetown.</p>
 
-    <p>Today, Juice Haven is a celebration of everything Will and Sam believe in: community, creativity, and clean ingredients. Every smoothie, bowl, and booster is crafted with intention — packed with vibrant produce, superfoods, and house-made nut milks. The shop has grown into a beloved staple for locals and visitors alike, known not just for its delicious menu but for the warm, welcoming environment that Will and Sam cultivated from day one. They continue to be hands-on with every part of the business, whether it’s chatting with customers behind the counter, refining recipes, or sourcing ingredients from local farmers. Juice Haven isn’t just a juice bar — it’s a place where health and happiness come together, one blend at a time.</p>
+    <p>Today, Will & Sam's Juice Bar is a celebration of everything Will and Sam believe in: community, creativity, and clean ingredients. Every smoothie, bowl, and booster is crafted with intention — packed with vibrant produce, superfoods, and house-made nut milks. The shop has grown into a beloved staple for locals and visitors alike, known not just for its delicious menu but for the warm, welcoming environment that Will and Sam cultivated from day one. They continue to be hands-on with every part of the business, whether it’s chatting with customers behind the counter, refining recipes, or sourcing ingredients from local farmers. Will & Sam's isn’t just a juice bar — it’s a place where health and happiness come together, one blend at a time.</p>
 
     <a href="index.html">Back to Home</a>
   </div>
